@@ -18,6 +18,7 @@ void setup(){
 
 void loop() {   
     auto command = read_command();
+    Serial.println(command);
     if (validate(command)) {
         handle_command(command);
     }
